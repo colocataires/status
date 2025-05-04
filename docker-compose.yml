@@ -1,0 +1,10 @@
+services:
+  issue-status:
+    image: issue-status
+    build: .
+    network_mode: host
+    restart: "no"
+    command: yarn build
+    env_file: .env
+    volumes:
+      - ./build:/build
