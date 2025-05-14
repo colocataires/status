@@ -1,8 +1,8 @@
 export default {
   operational: {
     name: "Operational",
-    colour: "#247234",
-    backgroundColour: "rgba(61, 167, 81, 0.1)",
+    colour: "#f5f8fa",
+    backgroundColour: "#1c6349",
   },
   performanceIssues: {
     name: "Performance Issues",

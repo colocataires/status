@@ -1,7 +1,7 @@
 const statuses = {
   operational: {
     message: "All Systems Operational",
-    backgroundColour: "#3da751",
+    backgroundColour: "#1c6349",
   },
   issues: {
     message: "Some systems are experiencing issues",

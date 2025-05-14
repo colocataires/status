@@ -8,6 +8,7 @@ const Title = styled.h1`
 `;
 
 const Logo = styled.img``;
+const LinkA = styled.a``;
 
 const Container = styled.div`
   text-align: center;
@@ -18,10 +19,14 @@ const Header = () =>
   process.env.REACT_APP_LOGO || process.env.REACT_APP_NAME ? (
     <Container>
       {process.env.REACT_APP_LOGO ? (
+	      <>
         <Logo
           src={process.env.REACT_APP_LOGO}
           alt={process.env.REACT_APP_NAME}
         />
+        <Title>{process.env.REACT_APP_NAME}</Title>
+	<LinkA href="https://colocataires.dev">Visit Colocataires Homepage</LinkA>
+	      </>
       ) : (
         <Title>{process.env.REACT_APP_NAME}</Title>
       )}
